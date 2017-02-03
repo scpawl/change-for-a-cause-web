@@ -11,6 +11,12 @@ $ npm start
 ```
 The server should be started on port 3000. Navigate to http://localhost:3000 to view
 
+## Running the App Locally
+```bash
+$ npm start
+```
+The server should be started on port 3000. Navigate to http://localhost:3000 to view
+
 ## Production Build
 ```bash
 $ npm run build
