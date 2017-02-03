@@ -33,5 +33,12 @@ $ npm test
 $ npm run e2e
 ```
 
+## Style
+
+Styles for this app are based on the [Angular 2 Style Guide](https://angular.io/docs/ts/latest/guide/style-guide.html)
+
+* Files shared by a component should be in the folder for that feature. e.g. the Member/ directory should contain member.module.ts, member.component.ts, member.html, etc.
+* File names should be in the format `<feature-name>.<component-type>.<file-type>`, e.g. member.module.ts
+
 ## License
 <a href="https://opensource.org/licenses/MIT">MIT License</a>
