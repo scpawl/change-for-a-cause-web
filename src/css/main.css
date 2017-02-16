@@ -36,6 +36,7 @@ a:hover {
 
 .main-container h3 {
     margin: 0;
+    margin-bottom: 10px;
     color: #373E41;
     font-size: 20px;
     font-weight: bold;
@@ -57,5 +58,27 @@ a:hover {
 .change-for-a-cause-header {
   background: powderblue;
   margin: 0px;
+  margin-bottom: 20px;
   padding: 20px;
+}
+
+.pledgeName {
+  font-weight: bold;
+}
+
+.pledgesList {
+  list-style: none;
+}
+
+.activityName {
+  font-weight: bold;
+}
+
+.activitiesList {
+  list-style: none;
+}
+
+.buttonDiv {
+  text-align: center;
+  padding-bottom: 10px;
 }
