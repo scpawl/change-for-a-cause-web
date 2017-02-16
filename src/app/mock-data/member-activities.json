@@ -1,0 +1,14 @@
+[
+  {
+    "activityID": 1,
+    "activityName": "Abstain from alcohol",
+    "activityDescription": "Do not drink alcohol for a day",
+    "value": 6
+  },
+  {
+    "activityID": 2,
+    "activityName": "Take Lunch to work",
+    "activityDescription": "Avoid eating lunch outside for a day",
+    "value": 4
+  }
+]

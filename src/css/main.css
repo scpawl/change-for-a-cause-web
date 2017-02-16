@@ -51,4 +51,11 @@ a:hover {
 
 .main-container p {
     margin: 0;
+    padding: 10px;
+}
+
+.change-for-a-cause-header {
+  background: powderblue;
+  margin: 0px;
+  padding: 20px;
 }
