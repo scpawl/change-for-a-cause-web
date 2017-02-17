@@ -2,13 +2,20 @@ import {Component} from '@angular/core';
 
 import { Pledge } from '../pledge/pledge';
 import { Activity } from '../activity/activity';
+import { Member } from '../member/member'
+import { MemberService } from '../member/member.service';
 
 @Component({
     selector: 'home',
-    templateUrl: './app/home/home.component.html'
+    templateUrl: './app/home/home.component.html',
+    providers: [MemberService]
 })
 
 export class HomeComponent {
+  constructor(private memberService: MemberService) { }
+
+  member: Member = this.memberService.getMember();
+
   pledges: Pledge[] = [ //TODO: Replace this with mock data, then connect to full API
     {
       pledgeID: 1,
