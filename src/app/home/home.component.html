@@ -1,46 +1,23 @@
-<div class="main-container">
-  <h3>My Profile</h3>
-  <p>
-    {{member.memberName}}
-  </p>
-  <p>
-    {{member.memberEmail}}
-  </p>
-  <p>
-    Last Active: {{member.memberLastActiveDate | date: 'MM/dd/yyyy'}}
-  </p>
-</div>
-
-<div class="main-container">
-  <h3>My Pledges</h3>
-  <ul class="pledges">
-    <li *ngFor="let pledge of pledges" class="pledgesList">
-      <span class="pledgeName">{{pledge.pledgeName}}</span>
-      <p>
-        I pledge to do this {{pledge.pledgeUnits}} times between
-        {{pledge.pledgeStartDate | date: 'MM/dd/yyyy'}} and {{pledge.pledgeEndDate | date: 'MM/dd/yyyy'}}
-      </p>
-    </li>
-  </ul>
-  <div class="buttonDiv">
-    <button>New Pledge</button>
+<div class="row">
+  <div class="column feature" (click)="openProfile()">
+    <img class="feature-icon" src="src/images/user-icon-round.png" />
+    <h3>Profile</h3>
+  </div>
+  <div class="column feature" (click)="openPledges()">
+    <img class="feature-icon" src="src/images/user-icon-round.png" />
+    <h3>Pledges</h3>
+  </div>
+  <div class="column feature" (click)="openActivities()">
+    <img class="feature-icon" src="src/images/user-icon-round.png" />
+    <h3>Activities</h3>
   </div>
 </div>
 
-<div class="main-container">
-  <h3>My Activities</h3>
-  <ul class="activities">
-    <li *ngFor="let activity of activities" class="activitiesList">
-      <span class="activityName">{{activity.activityName}}</span>
-      <p>
-        {{activity.activityDescription}}
-      </p>
-    </li>
-  </ul>
-  <div class="buttonDiv">
-    <button>New Activity</button>
-  </div>
-</div>
+<profile *ngIf="showProfile"></profile>
+<pledges *ngIf="showPledges"></pledges>
+<activity *ngIf="showActivities"></activity>
+
+
 
 <div class="main-container">
   <h3>Amount So Far</h3>
@@ -50,6 +27,5 @@
 </div>
 
 <div>
-
   This is some member info
 </div>

@@ -14,7 +14,8 @@ var paths = {
     assets: [
         'src/**/*.html',
         'src/**/*.js',
-        'src/**/*.css'
+        'src/**/*.css',
+        'src/images/*'
     ],
     vendors: [
         'node_modules/jquery/dist/jquery.js',

@@ -1,0 +1,15 @@
+<div class="main-container">
+  <h3>My Pledges</h3>
+  <ul class="pledges">
+    <li *ngFor="let pledge of pledges" class="pledgesList">
+      <span class="pledgeName">{{pledge.pledgeName}}</span>
+      <p>
+        I pledge to do this {{pledge.pledgeUnits}} times between
+        {{pledge.pledgeStartDate | date: 'MM/dd/yyyy'}} and {{pledge.pledgeEndDate | date: 'MM/dd/yyyy'}}
+      </p>
+    </li>
+  </ul>
+  <div class="buttonDiv">
+    <button>New Pledge</button>
+  </div>
+</div>

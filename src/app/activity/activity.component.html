@@ -1,0 +1,14 @@
+<div class="main-container">
+  <h3>My Activities</h3>
+  <ul class="activities">
+    <li *ngFor="let activity of activities" class="activitiesList">
+      <span class="activityName">{{activity.activityName}}</span>
+      <p>
+        {{activity.activityDescription}}
+      </p>
+    </li>
+  </ul>
+  <div class="buttonDiv">
+    <button>New Activity</button>
+  </div>
+</div>

@@ -82,3 +82,28 @@ a:hover {
   text-align: center;
   padding-bottom: 10px;
 }
+
+.row
+{
+    display: table;
+    width: 100%; /*Optional*/
+    table-layout: fixed; /*Optional*/
+    border-spacing: 10px; /*Optional*/
+}
+.column
+{
+    display: table-cell;
+    text-align: center;
+    width: 100%;
+}
+.column h3 {
+  margin-top: 5px;
+}
+
+.feature {
+  cursor: pointer;
+}
+
+.feature-icon {
+  max-width: 150px;
+}
