@@ -21,7 +21,7 @@ a:hover {
 }
 
 .header-container, .main-container, .footer-container {
-    width: 700px;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -106,4 +106,49 @@ a:hover {
 
 .feature-icon {
   max-width: 150px;
+}
+
+.main-tab:before{
+  margin:3em;
+  width:0; /*set dimensions of DIV to 0 so its borders collapse and touch one
+  another*/
+  height:0;
+  border-color: transparent transparent gray transparent; /*top, right, bottom, and left border*/
+  border-style: solid;
+  border-width: 50px; /*width of each border*/
+}
+
+.uparrowdiv, .uparrowdiv-center, .uparrowdiv-left, .uparrowdiv-right {
+  min-height:40px; /*min height of DIV should be set to at least 2x the width of the arrow*/
+  position:relative;
+  word-wrap:break-word;
+  -moz-border-radius:5px; /*add some nice CSS3 round corners*/
+  -webkit-border-radius:5px;
+  border-radius:5px;
+  margin-bottom:2em;
+}
+
+.uparrowdiv:after { /*arrow added to uparrowdiv DIV*/
+  content:'';
+  display:block;
+  position:absolute;
+  top:-20px; /*should be set to -border-width x 2 */
+  left:47%;
+  width:0;
+  height:0;
+  border-color: transparent transparent #ECEFF1 transparent; /*border color should be same as div div background color*/
+  border-style: solid;
+  border-width: 10px;
+}
+
+.uparrowdiv-right:after {
+  left:83%;
+}
+
+.uparrowdiv-center:after {
+  left:47%;
+}
+
+.uparrowdiv-left:after {
+  left:10%;
 }
